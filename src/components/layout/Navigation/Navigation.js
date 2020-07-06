@@ -4,6 +4,10 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
+//React-router-dom
+import {Link} from 'react-router-dom';
+
+
 import classes from './Navigation.module.css';
 
 const Navigation = () => {
@@ -11,7 +15,7 @@ const Navigation = () => {
     <Navbar className={classes.bg_brown} variant='dark'>
       <Navbar.Brand href='#home'>DeerTalks</Navbar.Brand>
       <Nav className='mr-auto'>
-        <Nav.Link href='/about'>About</Nav.Link>{' '}
+        <Nav.Link > <Link style={{color:'white',textDecoration:'none'}} to='/about' > About </Link></Nav.Link>{' '}
       </Nav>
     </Navbar>
   );
